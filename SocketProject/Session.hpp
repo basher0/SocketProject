@@ -31,7 +31,7 @@ namespace SP
             boost::function<void(Session*)> disconnect,
             boost::function<void(Message)> message);
 
-        ~Session();
+        ~Session() = default;
 
         /* Get Session Socket */
         tcp::socket& socket() const;
