@@ -13,11 +13,6 @@ namespace SP
 
 
     }
-    Session::~Session()
-    {
-        std::cout << "A Session was destroyed!" << std::endl;
-    }
-
     tcp::socket& Session::socket() const
     {
         return this->_socket;
